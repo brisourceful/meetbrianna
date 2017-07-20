@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <title>Meet Brianna</title>
     <script src="https://use.fontawesome.com/091e1f9078.js"></script>
+    <link rel="stylesheet" href="styles/styles.scss">
   </head>
   <header>
     <h1>Brianna Burrows</h1>
@@ -24,34 +25,34 @@
     </nav>
   </header>
   <body>
-    <section class="about">
+    <section id="about">
       <h2>About</h2>
-      <img id="profile-img" src="assets/IMG_3795.jpg" alt="Image of Brianna Burrows">
+      <!-- <img id="profile-img" src="assets/IMG_3795.jpg" alt="Image of Brianna Burrows"> -->
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <section class="contact">
-      <h2>Contact</h2>
+    <section class="container">
       <p> something about contacting me</p>
-      <form id="contact-form" action="" method="post">
+      <form id="contact" action="" method="post">
         <fieldset>
+          <h2>Contact</h2>
           <input placeholder="Your Name" type="text" name="" value="">
           <input placeholder="Your Email"type="text" name="" value="">
         </fieldset>
         <fieldset>
           <textarea placeholder="Type Your Message Here..." name="name" rows="8" cols="80"></textarea>
-          <button id="contact-submit" type="button" name="button"></button>
+          <button id="contact-submit" type="submit" name="submit">Send</button>
         </fieldset>
       </form>
     </section>
   </body>
   <footer>
+    <div id="social-icons">
+      <a href="https://twitter.com/BriannaMBurrows"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      <a href="https://github.com/brisourceful"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/briannaburrows/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a href="mailto:briannaburrows@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+    </div>
     <p>Copyright (c) 2017 Brianna Burrows All Rights Reserved.</p>
   </footer>
-    <div class="social-icons">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-      <i class="fa fa-github" aria-hidden="true"></i>
-      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-    </div>
   <script type="text/javascript"></script>
 </html>
