@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="styles/styles.scss">
   </head>
   <header>
-    <h1 id="title">Brianna Burrows</h1>
-    <h2 id="subtitle">Software Developer</h2>
-    <nav>
-      <i class="fa fa-bars" aria-hidden="true">
-        <ul id="menu">
-          <li>Projects</li>
-          <li>Blog</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </i>
-    </nav>
+    <div id="header">
+      <h1 id="title">Brianna Burrows</h1>
+      <h2 id="subtitle">Software Developer</h2>
+      <nav id="menu">
+        <a class="toggle-nav" href="#">&#9776;</a>
+          <ul class="active">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <body>
     <section id="about">
@@ -31,15 +32,16 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section class="contact-container">
-      <form id="contact" action="" method="post">
+      <div id="form-messages"></div>
+      <form id="contact" action="mailer.php" method="post">
         <fieldset>
           <h2>Contact</h2>
           <p> something about contacting me</p>
-          <input placeholder="Your Name" type="text" name="" value="">
-          <input placeholder="Your Email"type="text" name="" value="">
+          <input id="name" placeholder="Your Name" type="text" name="" value="" required>
+          <input id="email" placeholder="Your Email"type="text" name="" value="" required>
         </fieldset>
         <fieldset>
-          <textarea placeholder="Type Your Message Here..." name="name" rows="8" cols="80"></textarea>
+          <textarea id="message" placeholder="Type Your Message Here..." name="name" rows="8" cols="80" required></textarea>
           <button id="contact-submit" type="submit" name="submit">Send</button>
         </fieldset>
       </form>
