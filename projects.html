@@ -11,30 +11,38 @@
     <link rel="stylesheet" href="styles/styles.scss">
   </head>
   <header>
-    <h1 id="title">Brianna Burrows</h1>
-    <h2 id="subtitle">Software Developer</h2>
-    <nav>
-      <i class="fa fa-bars" aria-hidden="true">
-        <ul id="menu">
-          <li>Projects</li>
-          <li>Blog</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </i>
-    </nav>
+    <div id="header">
+      <h1 id="title">Brianna Burrows</h1>
+      <h2 id="subtitle">Software Developer</h2>
+      <nav id="menu">
+        <a class="toggle-nav" href="#">&#9776;</a>
+          <ul class="active">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <body>
     <h2>Projects</h2>
     <div class="curr-proj">
-      <h2>Currently:</h2>
+      <h2>Currently Working On:</h2>
         <h3>Title</h3>
-        <p>Descriptions</p>
+        <p>DescriptionDescription Description Description Description Description Description Description Description Description</p>
     </div>
     <div class="prev-proj">
       <h2>Previous:</h2>
+        <h3>Decarbonate.me</h3>
+        <a href="https://github.com/Carbon-Inc/decarbonate.me--back-end"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><strong>Backend:</strong> MongoDb, Node, Express, Mocha, Chai, Superagent
+        </p>
+        <img class="proj-img" src="" alt="Image of Decarbonate.me App">
+        <br>
         <a href="https://dinner-and-a-movie.herokuapp.com/"><h3>Dinner and a Movie</h3></a>
-        <a href=""><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <a href="https://github.com/brisourceful/dinner-and-a-movie"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p><strong>Frontend:</strong> HTML, CSS, JavaScript, jQuery, Handlebars, Google Maps
         <br>

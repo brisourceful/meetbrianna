@@ -1,13 +1,9 @@
 'use strict'
 
 $(document).ready(function () {
-  $('.menu').hide();
-});
+  $('.toggle-nav').click(function () {
+    $(this).toggleClass('active');
+    $('.menu ul').toggleClass('active');
 
-let indexView = {};
-
-indexView.handleNavMenu = function () {
-  $('.fa-bars').on('click', function () {
-    $('.menu').show();
   });
-};
+});
