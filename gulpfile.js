@@ -1,0 +1,16 @@
+'use strict';
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+
+gulp.task('sass', function () {
+  return gulp.src('./styles/styles.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./assets/css'));
+});
+
+gulp.task('watch', function () {
+  gulp.watch('./styles/*.scss', ['sass']);
+  // gulp.watch('index.html');
+  // guplp.watch('projects.html');
+});

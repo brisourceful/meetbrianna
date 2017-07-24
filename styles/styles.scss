@@ -1,16 +1,37 @@
-// .toggle-nav {
-//   display: none;
-// }
+@import "mixins.scss";
 
-@media screen and (max-width: 650px) {
 
   * {
   	-webkit-box-sizing:border-box;
   }
+  
 
   header {
-    display:inline;
+    display: block;
+    border-bottom: 2px solid;
 
+  }
+
+  #hamburger-menu {
+    text-indent: -10000rem;
+    position: relative;
+
+    &::before {
+    @include hamburger-menu-shape();
+    }
+
+    &::after {
+    @include hamburger-menu-shape();
+    }
+
+    span::before {
+    @include hamburger-menu-shape();
+    }
+  }
+
+  #title span {
+    display: block;
+    font-size: 20px;
   }
 
   body {
@@ -62,9 +83,9 @@
 
   }
 
-  #header {
-    border-bottom: 2px solid;
-  }
+  // #header {
+  //   border-bottom: 2px solid;
+  // }
 
   #menu {
     display: inline-block;
@@ -233,5 +254,3 @@
   :-ms-input-placeholder {
    color: #888;
   }
-
-}

@@ -1,0 +1,24 @@
+{
+  "name": "meetbrianna",
+  "version": "1.0.0",
+  "description": "my website thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brisourceful/meetbrianna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brisourceful/meetbrianna/issues"
+  },
+  "homepage": "https://github.com/brisourceful/meetbrianna#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
