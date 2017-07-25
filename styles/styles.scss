@@ -4,17 +4,18 @@
   * {
   	-webkit-box-sizing:border-box;
   }
-  
+
 
   header {
-    display: block;
+    display: flex;
     border-bottom: 2px solid;
-
   }
 
   #hamburger-menu {
     text-indent: -10000rem;
     position: relative;
+    width: 70px;
+
 
     &::before {
     @include hamburger-menu-shape();
@@ -26,12 +27,14 @@
 
     span::before {
     @include hamburger-menu-shape();
+    margin-top: 25px;
     }
   }
 
   #title span {
     display: block;
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   body {
@@ -83,14 +86,6 @@
 
   }
 
-  // #header {
-  //   border-bottom: 2px solid;
-  // }
-
-  #menu {
-    display: inline-block;
-    float: right;
-  }
 
   #menu li {
     display: none;
@@ -120,6 +115,7 @@
   }
 
   #title {
+    flex-basis: 100%;
     margin-bottom: 0;
     display: inline;
   }
