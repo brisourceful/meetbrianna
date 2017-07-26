@@ -1,3 +1,4 @@
+@import "reset.scss";
 @import "mixins.scss";
 
 
@@ -7,27 +8,37 @@
 
 
   header {
-    display: flex;
     border-bottom: 2px solid;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   #hamburger-menu {
     text-indent: -10000rem;
     position: relative;
-    width: 70px;
+    width: 40px;
+    height: 20px;
+    align-self: center;
+    background: none;
+
 
 
     &::before {
     @include hamburger-menu-shape();
+    top: 0rem;
     }
 
     &::after {
     @include hamburger-menu-shape();
+    top: 0.5rem;
     }
 
     span::before {
     @include hamburger-menu-shape();
-    margin-top: 25px;
+    top: 1.0rem;
     }
   }
 
@@ -87,8 +98,21 @@
   }
 
 
+  #menu {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s linear;
+
+    &.active {
+    border-top: 2px solid;
+    height: 120px;
+    opacity: 1;
+    }
+  }
+
   #menu li {
-    display: none;
+    text-align: center;
   }
 
   #profile-img {
@@ -115,7 +139,6 @@
   }
 
   #title {
-    flex-basis: 100%;
     margin-bottom: 0;
     display: inline;
   }
