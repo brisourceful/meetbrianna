@@ -6,7 +6,6 @@
   	-webkit-box-sizing:border-box;
   }
 
-
   header {
     border-bottom: 2px solid;
 
@@ -40,6 +39,10 @@
     @include hamburger-menu-shape();
     top: 1.0rem;
     }
+  }
+
+  #title {
+    font-size: 24px;
   }
 
   #title span {
