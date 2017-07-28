@@ -23,8 +23,6 @@
     align-self: center;
     background: none;
 
-
-
     &::before {
     @include hamburger-menu-shape();
     top: 0rem;
@@ -122,12 +120,22 @@
     max-width: 180px;
     max-height: 180px;
     border-radius: 50%;
-    float: right;
+    order: 2;
+    margin: 10px;
   }
 
   #about {
+    display: flex;
+    flex-direction: column;
     border-bottom: 2px solid;
+  }
 
+  #about div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about p {
   }
 
   #social-icons {
@@ -275,4 +283,19 @@
   }
   :-ms-input-placeholder {
    color: #888;
+  }
+
+  @media (min-width: 776px) {
+
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #about {
+      max-width: 654px;
+      border: none;
+
+    }
+
   }
