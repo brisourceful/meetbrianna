@@ -7,7 +7,7 @@
   }
 
   header {
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
 
     > div {
       display: flex;
@@ -72,7 +72,7 @@
   }
 
   footer {
-    border-top: 4px solid;
+    border-top: 1px solid;
     margin-top: 20px;
   }
 
@@ -106,7 +106,7 @@
     transition: height 0.3s linear;
 
     &.active {
-    border-top: 2px solid;
+    border-top: 1px solid;
     height: 120px;
     opacity: 1;
     }
@@ -127,7 +127,7 @@
   #about {
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
   }
 
   #about div {
@@ -263,7 +263,7 @@
   }
 
   .prev-proj {
-    border-top: 2px solid;
+    border-top: 1px solid;
   }
 
   .contact-container {
@@ -287,6 +287,10 @@
 
   @media (min-width: 776px) {
 
+    header {
+      border-bottom: none;
+    }
+
     main {
       display: flex;
       flex-direction: row;
@@ -295,7 +299,17 @@
     #about {
       max-width: 654px;
       border: none;
+    }
 
+
+
+    #menu {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #menu ul li {
+      display: inline;
     }
 
   }

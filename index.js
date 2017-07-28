@@ -2,8 +2,9 @@
 
 $(document).ready(function () {
 
+  $('#menu').removeClass('active');
+
   $('#hamburger-menu').click(function () {
-    console.log('this happened');
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
 
