@@ -16,6 +16,10 @@
     }
   }
 
+  button:focus {
+    outline: 0;
+  }
+
   #hamburger-menu {
     text-indent: -10000rem;
     position: relative;
@@ -55,7 +59,7 @@
     margin: 3% 5%;
     font-family:"Open Sans", Helvetica, Arial, sans-serif;
     font-weight:300;
-    // font-size: 14px;
+    font-size: 14px;
     line-height:30px;
     color: #576366;
   }
@@ -65,6 +69,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
+  }
+
+  .blog-title {
+    display: block;
+    text-align: center;
   }
 
   #proj-title {
@@ -132,6 +141,7 @@
   }
 
   #menu li {
+    font-size: 18px;
     text-align: center;
   }
 
@@ -293,8 +303,8 @@
     border: 2px solid;
     min-width: 353px;
     min-height: 203px;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 43%;
+    max-height: 4%;
   }
 
 
@@ -328,13 +338,26 @@
       display: none;
     }
 
+    #menu.active {
+      height: 30px;
+    }
+
     header {
       border-bottom: none;
+
+      > div {
+        display: flex;
+        flex-direction: row;
+      }
     }
 
     main {
       display: flex;
       flex-direction: row;
+    }
+
+    #title span {
+
     }
 
     #about {
@@ -346,6 +369,14 @@
     #menu {
       display: flex;
       justify-content: flex-end;
+    }
+
+    #menu li {
+      padding: 20px;
+    }
+
+    #menu.active {
+      margin-right: 10px;
     }
 
     #menu ul li {
@@ -364,4 +395,9 @@
     #curr-title h3 {
       text-align: center;
     }
+
+    // #prev-proj {
+    //   display: flex;
+    //
+    // }
   }

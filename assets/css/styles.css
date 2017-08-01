@@ -56,6 +56,9 @@ header {
     display: flex;
     justify-content: space-between; }
 
+button:focus {
+  outline: 0; }
+
 #hamburger-menu {
   text-indent: -10000rem;
   position: relative;
@@ -104,6 +107,7 @@ body {
   margin: 3% 5%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
+  font-size: 14px;
   line-height: 30px;
   color: #576366; }
 
@@ -111,6 +115,10 @@ h2 {
   font-size: 24px;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.blog-title {
+  display: block;
+  text-align: center; }
 
 #proj-title {
   text-align: center;
@@ -163,6 +171,7 @@ a.toggle-nav {
     opacity: 1; }
 
 #menu li {
+  font-size: 18px;
   text-align: center; }
 
 #profile-img {
@@ -300,8 +309,8 @@ a.toggle-nav {
   border: 2px solid;
   min-width: 353px;
   min-height: 203px;
-  max-width: 50%;
-  max-height: 50%; }
+  max-width: 43%;
+  max-height: 4%; }
 
 #prev-proj {
   border-top: 1px solid; }
@@ -326,8 +335,13 @@ a.toggle-nav {
 @media (min-width: 776px) {
   #hamburger-menu {
     display: none; }
+  #menu.active {
+    height: 30px; }
   header {
     border-bottom: none; }
+    header > div {
+      display: flex;
+      flex-direction: row; }
   main {
     display: flex;
     flex-direction: row; }
@@ -337,6 +351,10 @@ a.toggle-nav {
   #menu {
     display: flex;
     justify-content: flex-end; }
+  #menu li {
+    padding: 20px; }
+  #menu.active {
+    margin-right: 10px; }
   #menu ul li {
     display: inline; }
   #curr-proj {
