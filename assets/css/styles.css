@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:500");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -91,20 +92,30 @@ header {
     top: 1.0rem; }
 
 #title {
-  font-size: 24px; }
+  font-size: 36px;
+  font-family: 'Cormorant Garamond', serif; }
 
 #title span {
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px; }
 
 body {
   margin: 3% 5%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
   line-height: 30px;
   color: #576366; }
+
+h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#proj-title {
+  text-align: center;
+  margin: 10px;
+  font-weight: bold; }
 
 a {
   text-decoration: none; }
@@ -114,7 +125,8 @@ a:link, a:visited {
 
 h3 {
   display: inline;
-  margin-right: 10px; }
+  margin-right: 10px;
+  font-size: 20px; }
 
 footer {
   border-top: 1px solid;
@@ -133,6 +145,9 @@ fieldset {
   min-width: 100%;
   padding: 0;
   width: 100%; }
+
+strong {
+  font-weight: bold; }
 
 a.toggle-nav {
   position: relative; }
@@ -174,6 +189,9 @@ a.toggle-nav {
 #social-icons i {
   padding: 8px;
   color: #1f5768; }
+
+#social-icons i:hover {
+  color: #f6ee5b; }
 
 #title {
   margin-bottom: 0;
@@ -275,7 +293,17 @@ a.toggle-nav {
   max-width: 50%;
   max-height: 50%; }
 
-.prev-proj {
+#curr-title {
+  text-align: center; }
+
+#curr-img {
+  border: 2px solid;
+  min-width: 353px;
+  min-height: 203px;
+  max-width: 50%;
+  max-height: 50%; }
+
+#prev-proj {
   border-top: 1px solid; }
 
 .contact-container {
@@ -296,6 +324,8 @@ a.toggle-nav {
   color: #888; }
 
 @media (min-width: 776px) {
+  #hamburger-menu {
+    display: none; }
   header {
     border-bottom: none; }
   main {
@@ -308,4 +338,11 @@ a.toggle-nav {
     display: flex;
     justify-content: flex-end; }
   #menu ul li {
-    display: inline; } }
+    display: inline; }
+  #curr-proj {
+    display: flex;
+    flex-direction: column; }
+  #curr-proj p {
+    margin-right: 50px; }
+  #curr-title h3 {
+    text-align: center; } }

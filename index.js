@@ -2,12 +2,24 @@
 
 $(document).ready(function () {
 
-  $('#menu').removeClass('active');
+  $(window).resize(function() {
+    menuFunction();
+  });
+
+  function menuFunction () {
+    if (!Modernizr.mq('(min-width: 776px)')) {
+      $('#menu').removeClass('active');
+      console.log('This is when min-width 776px');
+    }
+    else {
+      $('#menu').addClass('active');
+    }
+  };
 
   $('#hamburger-menu').click(function () {
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
-
+    console.log('we are toggling the classes');
   });
 
 
