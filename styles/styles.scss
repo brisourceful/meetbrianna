@@ -312,11 +312,14 @@
     border-top: 1px solid;
   }
 
-
   .contact-container {
   	max-width: 900px;
   	margin:0 auto;
   	position:relative;
+  }
+
+  .site-wireframes {
+    height: 50%
   }
 
   ::-webkit-input-placeholder {
@@ -396,8 +399,12 @@
       text-align: center;
     }
 
-    // #prev-proj {
-    //   display: flex;
-    //
-    // }
+    #site-wireframes {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .site-wireframes {
+      height: 50%
+    }
   }

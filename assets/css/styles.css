@@ -320,6 +320,9 @@ a.toggle-nav {
   margin: 0 auto;
   position: relative; }
 
+.site-wireframes {
+  height: 50%; }
+
 ::-webkit-input-placeholder {
   color: #888; }
 
@@ -363,4 +366,9 @@ a.toggle-nav {
   #curr-proj p {
     margin-right: 50px; }
   #curr-title h3 {
-    text-align: center; } }
+    text-align: center; }
+  #site-wireframes {
+    display: flex;
+    justify-content: space-between; }
+  .site-wireframes {
+    height: 50%; } }
