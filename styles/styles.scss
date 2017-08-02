@@ -289,7 +289,7 @@
   }
 
   .proj-img {
-    min-width: 353px;
+    min-width: 320px;
     min-height: 203px;
     max-width: 50%;
     max-height: 50%;
@@ -298,6 +298,10 @@
   #curr-title {
     text-align: center;
   }
+
+  #curr-proj p {
+    margin-top: 15px;
+  }  
 
   #curr-img {
     border: 2px solid;
@@ -309,6 +313,7 @@
 
 
   #prev-proj {
+    margin-top: 30px;
     border-top: 1px solid;
   }
 
@@ -388,10 +393,16 @@
 
     #curr-proj {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      max-height: 400px;
+    }
+
+    #curr-proj img {
+      border: 1px solid;
     }
 
     #curr-proj p {
+      margin-top: 15px;
       margin-right: 50px;
     }
 
