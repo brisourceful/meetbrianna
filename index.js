@@ -11,7 +11,7 @@ $(document).ready(function () {
       $('#menu').removeClass('active');
     }
     else {
-      $('#menu').addClass('active');
+      $('#hamburger-menu').addClass('active');
     }
   };
 

@@ -93,6 +93,42 @@ button:focus {
     border-radius: 4px;
     background-color: #576366;
     top: 1.0rem; }
+  #hamburger-menu.active::before {
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+    transition-timing-function: ease;
+    transition-duration: .20s;
+    transition-property: transform; }
+  #hamburger-menu.active::after {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition-timing-function: ease;
+    transition-duration: .10s;
+    transition-property: transform, opacity; }
+  #hamburger-menu.active span::before {
+    transform: translate3d(0, -6.5px, 0) rotate(135deg);
+    transition-timing-function: ease;
+    transition-duration: .20s;
+    transition-property: transform; }
+
+#menu {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s linear; }
+  #menu.active {
+    border-top: 1px solid;
+    height: 120px;
+    opacity: 1; }
+
+#menu li {
+  font-size: 18px;
+  text-align: center; }
+
+#hamburger-box {
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity,filter;
+  text-transform: none; }
 
 #title {
   font-size: 36px;
@@ -159,20 +195,6 @@ strong {
 
 a.toggle-nav {
   position: relative; }
-
-#menu {
-  overflow: hidden;
-  height: 0;
-  opacity: 0;
-  transition: height 0.3s linear; }
-  #menu.active {
-    border-top: 1px solid;
-    height: 120px;
-    opacity: 1; }
-
-#menu li {
-  font-size: 18px;
-  text-align: center; }
 
 #profile-img {
   max-width: 180px;
