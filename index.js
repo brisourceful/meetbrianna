@@ -11,13 +11,14 @@ $(document).ready(function () {
       $('#menu').removeClass('active');
     }
     else {
-      $('#hamburger-menu').addClass('active');
+      $('#menu').addClass('active');
     }
   };
 
   $('#hamburger-menu').click(function () {
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
+    // $('#hamburger-menu').toggleClass('slider');
   });
 
 });

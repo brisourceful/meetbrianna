@@ -43,7 +43,7 @@
     top: 1.0rem;
     }
 
-    &.active {
+    &.slider {
       &::before{
         transform: translate3d(0,10px,0) rotate(45deg);
         transition-timing-function: ease;

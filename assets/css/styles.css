@@ -93,18 +93,18 @@ button:focus {
     border-radius: 4px;
     background-color: #576366;
     top: 1.0rem; }
-  #hamburger-menu.active::before {
+  #hamburger-menu.slider::before {
     transform: translate3d(0, 10px, 0) rotate(45deg);
     transition-timing-function: ease;
     transition-duration: .20s;
     transition-property: transform; }
-  #hamburger-menu.active::after {
+  #hamburger-menu.slider::after {
     transform: translateX(-30px);
     opacity: 0;
     transition-timing-function: ease;
     transition-duration: .10s;
     transition-property: transform, opacity; }
-  #hamburger-menu.active span::before {
+  #hamburger-menu.slider span::before {
     transform: translate3d(0, -6.5px, 0) rotate(135deg);
     transition-timing-function: ease;
     transition-duration: .20s;
