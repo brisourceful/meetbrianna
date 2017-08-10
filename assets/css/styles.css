@@ -55,6 +55,32 @@ header {
   header > div {
     display: flex;
     justify-content: space-between; }
+  header.nav-open #hamburger-menu::before {
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+    transition-timing-function: ease;
+    transition-duration: .2s;
+    transition-property: transform; }
+  header.nav-open #hamburger-menu::after {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition-timing-function: ease;
+    transition-duration: .1s;
+    transition-property: transform, opacity; }
+  header.nav-open #hamburger-menu span::before {
+    transform: translate3d(0, -6.5px, 0) rotate(135deg);
+    transition-timing-function: ease;
+    transition-duration: .2s;
+    transition-property: transform; }
+  header.nav-open #menu {
+    border-top: 1px solid;
+    height: 120px;
+    opacity: 1; }
+  header #hamburger-menu::before {
+    transition: transform 0.2s; }
+  header #hamburger-menu::after {
+    transition: transform 0.2s; }
+  header #hamburger-menu span::before {
+    transition: transform 0.2s; }
 
 button:focus {
   outline: 0; }
@@ -99,10 +125,6 @@ button:focus {
   height: 0;
   opacity: 0;
   transition: height 0.3s linear; }
-  #menu.active {
-    border-top: 1px solid;
-    height: 120px;
-    opacity: 1; }
 
 #menu li {
   font-size: 18px;
@@ -348,8 +370,8 @@ a.toggle-nav {
 @media (min-width: 776px) {
   #hamburger-menu {
     display: none; }
-  #menu.active {
-    height: 30px; }
+  header.nav-open #menu {
+    height: auto; }
   header {
     border-bottom: none; }
     header > div {

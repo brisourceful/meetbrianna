@@ -14,6 +14,52 @@
       display: flex;
       justify-content: space-between;
     }
+
+    &.nav-open {
+      #hamburger-menu{
+        &::before{
+          transform: translate3d(0,10px,0) rotate(45deg);
+          transition-timing-function: ease;
+          transition-duration: .2s;
+          transition-property: transform;
+        }
+
+        &::after {
+          transform: translateX(-30px);
+          opacity: 0;
+          transition-timing-function: ease;
+          transition-duration: .1s;
+          transition-property: transform, opacity;
+        }
+
+        span::before {
+          transform: translate3d(0, -6.5px, 0) rotate(135deg);
+          transition-timing-function: ease;
+          transition-duration: .2s;
+          transition-property: transform;
+        }
+      }
+
+      #menu {
+        border-top: 1px solid;
+        height: 120px;
+        opacity: 1;
+      }
+    }
+
+    #hamburger-menu{
+      &::before{
+        transition: transform 0.2s;
+      }
+
+      &::after {
+        transition: transform 0.2s;
+      }
+
+      span::before {
+        transition: transform 0.2s;
+      }
+    }
   }
 
   button:focus {
@@ -29,44 +75,19 @@
     background: none;
 
     &::before {
-    @include hamburger-menu-shape();
-    top: 0rem;
+      @include hamburger-menu-shape();
+      top: 0rem;
     }
 
     &::after {
-    @include hamburger-menu-shape();
-    top: 0.5rem;
+      @include hamburger-menu-shape();
+      top: 0.5rem;
     }
 
     span::before {
-    @include hamburger-menu-shape();
-    top: 1.0rem;
+      @include hamburger-menu-shape();
+      top: 1.0rem;
     }
-
-    // &.active {
-    //   &::before{
-    //     transform: translate3d(0,10px,0) rotate(45deg);
-    //     transition-timing-function: ease;
-    //     transition-duration: .20s;
-    //     transition-property: transform;
-    //   }
-    //
-    //   &::after {
-    //     transform: translateX(-30px);
-    //     opacity: 0;
-    //     transition-timing-function: ease;
-    //     transition-duration: .10s;
-    //     transition-property: transform, opacity;
-    //   }
-    //
-    //   span::before {
-    //     transform: translate3d(0, -6.5px, 0) rotate(135deg);
-    //     transition-timing-function: ease;
-    //     transition-duration: .20s;
-    //     transition-property: transform;
-    //   }
-    //
-    // }
   }
 
   #menu {
@@ -74,12 +95,6 @@
     height: 0;
     opacity: 0;
     transition: height 0.3s linear;
-
-    &.active {
-    border-top: 1px solid;
-    height: 120px;
-    opacity: 1;
-    }
   }
 
   #menu li {
@@ -378,8 +393,10 @@
       display: none;
     }
 
-    #menu.active {
-      height: 30px;
+    header.nav-open {
+      #menu{
+        height: auto;
+      }
     }
 
     header {

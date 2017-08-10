@@ -8,17 +8,15 @@ $(document).ready(function () {
 
   function menuFunction () {
     if (!Modernizr.mq('(min-width: 776px)')) {
-      $('#menu').removeClass('active');
+      $('header').removeClass('nav-open');
     }
     else {
-      $('#menu').addClass('active');
+      $('header').addClass('nav-open');
     }
   };
 
   $('#hamburger-menu').click(function () {
-    $(this).toggleClass('active');
-    $('#menu').toggleClass('active');
-    // $('#hamburger-menu').toggleClass('slider');
+    $('header').toggleClass('nav-open');
   });
 
 });
